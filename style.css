@@ -1,95 +1,105 @@
-* {
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.87);
-}
-header {
-    height: 101px;
-    box-shadow: 0 1px 3px rgb(0, 0, 0 / 10%), 0 2px 2px rgb(0, 0, 0 / 6% ),  0 0 2px rgb(0 0 0 / 7%);
-}
-.header-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.left-nav {
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-.left-nav nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-.left-nav nav ul li {
-    text-transform: uppercase;
-    padding-left: 24px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-}
-.left-nav nav ul li:hover {
-    color: #008248;
-    cursor: pointer;
-}
-.logo {
-    height: 51px;
-    width: 51px;
-}
-.logo img {
-    height: 100%;
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url(C:/Users/HemaxiJoshi/Downloads/SoDoSans-Regular.ttf);
 }
 
-.right-nav {
-    display: flex;
-    align-items: center;
+a{
+    color: black;
 }
-.find-store {
-    margin-right: 40px;
+
+.left-right-sections{
+    margin: 20px 30px 50px 30px;
+    display: flex;
+}
+
+.left-right-sections .text {
+    width: 50%;
+    color:white;
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #32462f;
+}
+
+.text h1 {
+    font: 'SoDoSans', Helvetica, Arial, sans-serif;
+    font-size: 46px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.text h3 {
+    font: 'SoDoSans', Helvetica, Arial, sans-serif;
+    font-size: 34px;
     font-weight: 600;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    font-size: 19px;
+    text-align: center;
 }
-.find-store:hover {
-    color: #008248;
+
+.text h3 {
+    font: 'SoDoSans', Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    font-size: 19px;
+    text-align: center;
 }
-.find-store i {
-    padding-right: 8px;
-    font-size: 24px;
-}
-.sign-in, .join-now {
+
+.text .cta {
     padding: 7px 16px;
     border: 1px solid;
-    border-radius: 50px;
+    border-radius:  50px;
     font-weight: 600;
-    line-height: 1.2;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.sign-in{
-    color: black;
-
+.text .cta:hover {
+    background-color: rgba(146, 241, 216, 0.1);
 }
 
-.sign-in:hover{
-    background-color: rgb(199, 199, 199);
-    transition: all 0.4s ease;
+.left-right-sections .image {
+    width: 50%;
+    display: flex;
 }
 
-.join-now{
-    background-color: black;
-    color: white;
-    transition: all 0.4s ease;
+.left-right-sections .image img {
+    width: 100%;
 }
 
-.join-now:hover{
-    background-color: rgba(0, 0, 0, 0.568);
+#p1 .text {
+    background-color: #32462f;
 }
 
+#p2 .text {
+    background-color: #32472f;
+}
+
+#p3 .text {
+    background-color: #006342;
+}
+
+#p4 .text {
+    background-color: #32452f;
+}
+
+.footnote {
+    display: block;
+    font-size: 14px;
+    font-weight: 545;
+    margin: 100px 450px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.footer {
+    font-size: xx-small;
+    text-align: right;
+}
